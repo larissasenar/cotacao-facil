@@ -83,5 +83,5 @@ elif escolha == "Sair":
 
 # Rodapé
     st.markdown("---")
-    st.markdown("Desenvolvido por [Seu Nome] - Projeto da Faculdade 🧠")
+    st.markdown("Desenvolvido para a disciplina de Desenvolvimento rápido de aplicações em python - Projeto da Faculdade 🧠")
 
