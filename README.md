@@ -6,12 +6,12 @@ Um sistema simples e rápido para consultar cotações de **ações e moedas em 
 
 ## 📌 Funcionalidades
 
-- ✅ Cadastro e login de usuários (com banco de dados local SQLite)
-- 📈 Busca de cotações em tempo real via [Alpha Vantage API](https://www.alphavantage.co/)
-- 📊 Gráfico com variação de preços
-- 🕘 Histórico de buscas da sessão
-- 🔐 Logout
-- 🌍 Publicado online no Streamlit Cloud
+- Cadastro e login de usuários (com banco de dados local SQLite)
+- Busca de cotações em tempo real via [Alpha Vantage API](https://www.alphavantage.co/)
+- Gráfico com variação de preços
+- Histórico de buscas da sessão
+- Logout
+- Publicado online no Streamlit Cloud
 
 ---
 
@@ -24,10 +24,10 @@ Acesse agora:
 
 ## ⚙️ Tecnologias utilizadas
 
-- [Python](https://www.python.org/)
-- [Streamlit](https://streamlit.io/) – para interface web
-- [Alpha Vantage API](https://www.alphavantage.co/) – para dados de mercado
-- [SQLite](https://www.sqlite.org/) – banco de dados de usuários
+- Python
+- Streamlit(https://streamlit.io/) – para interface web
+- Alpha Vantage API(https://www.alphavantage.co/) – para dados de mercado
+- SQLite(https://www.sqlite.org/) – banco de dados de usuários
 - `requests`, `matplotlib`, `pandas` – bibliotecas auxiliares
 
 ---
@@ -36,7 +36,7 @@ Acesse agora:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/cotacao-facil.git
+git clone https://github.com/larissasenar/cotacao-facil.git
 cd cotacao-facil
 ```
 

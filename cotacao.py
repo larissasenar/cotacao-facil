@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY = os.getenv("API_KEY")  # Carrega a chave do .env
+API_KEY = os.getenv("API_KEY")
 
 def buscar_cotacao(simbolo):
     url = f"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={simbolo}&apikey={API_KEY}"

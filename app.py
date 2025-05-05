@@ -12,11 +12,11 @@ if "logado" not in st.session_state:
     st.session_state.usuario = ""
     st.session_state.historico = []
 
-# MENU LATERAL
+#menuLateral
 menu = ["Login", "Cadastro", "Sair"] if st.session_state.logado else ["Login", "Cadastro"]
 escolha = st.sidebar.selectbox("📋 Menu", menu)
 
-# CADASTRO
+#cadastro
 if escolha == "Cadastro":
     st.title("📋 Criar Conta")
     usuario = st.text_input("Usuário")
@@ -27,7 +27,7 @@ if escolha == "Cadastro":
         else:
             st.error("❌ Usuário já existe.")
 
-# LOGIN
+#login
 elif escolha == "Login":
     if not st.session_state.logado:
         st.title("🔐 Login")
@@ -42,7 +42,7 @@ elif escolha == "Login":
             else:
                 st.error("❌ Credenciais inválidas.")
     else:
-        # Tela principal do app após login
+        #telaPrincipal
         st.title("💰 Cotação de Moedas e Ações")
         simbolo = st.text_input("🔍 Digite o código da ação ou moeda (ex: AAPL, BTC, PETR4.SA)")
         if st.button("Buscar Cotação"):
@@ -68,20 +68,20 @@ elif escolha == "Login":
             else:
                 st.error("❌ Símbolo inválido ou erro na API.")
 
-        # Histórico de buscas
+        #historicoBuscas
         if st.session_state.historico:
             st.subheader("🕘 Histórico de Buscas (Sessão)")
             for item in reversed(st.session_state.historico[-5:]):
                 st.write(f"🔸 {item}")
 
-# LOGOUT
+#lOGOUT
 elif escolha == "Sair":
     st.session_state.logado = False
     st.session_state.usuario = ""
     st.session_state.historico = []
     st.success("🚪 Logout realizado com sucesso.")
 
-# Rodapé
+#footer
     st.markdown("---")
-    st.markdown("Desenvolvido para a disciplina de Desenvolvimento rápido de aplicações em python - Projeto da Faculdade 🧠")
+    st.markdown("Desenvolvido para a disciplina de Desenvolvimento rápido de aplicações em python - Projeto da Faculdade")
 
