@@ -23,6 +23,7 @@ pyarrow==19.0.1
 pydeck==0.9.1
 python-dateutil==2.9.0.post0
 pytz==2025.2
+python-dotenv==1.0.1
 referencing==0.36.2
 requests==2.32.3
 rpds-py==0.24.0
@@ -36,7 +37,4 @@ typing_extensions==4.13.2
 tzdata==2025.2
 urllib3==2.4.0
 watchdog==6.0.0
-streamlit
-requests
-pandas
 matplotlib
