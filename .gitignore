@@ -1,5 +1,6 @@
 # Arquivos de ambiente
 .env
+users.db
 
 # Cache do Python
 __pycache__/
